@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'CMU Bright Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CMU Bright Roman'), url('cmunbmr.woff') format('woff');
+}
+
+:root{
+  --textcolor: #151519;
+  --accent: #8ac141;
+  --bckgr: #d8d8d8;
+  --accent2: #ed65cb;
+  --link: #3099f4;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--accent2);
+}
+
+body {
+  background-color: var(--bckgr);
+  color: var(--textcolor);
+  font-family: "CMU Bright Roman", Arial, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--accent);
+  padding:0;
+  width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:var(--textcolor);
+  font-weight:bold;
+}
+
+.navbar li a:hover {
+  background-color: var(--accent2);
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--textcolor);
+  text-align: center;
+  padding: 4px;
+  box-sizing: border-box;
+  font-size: small;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 30px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: calc(100% - 12px);
+}
+
+.content1 {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 100%;
+  min-height: calc(100% - 12px);
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.teorija {
+  box-sizing: border-box;
+  flex-basis: 85%;
+}
+
+.nodalas {
+  box-sizing: border-box;
+  flex-basis: 15%;
+}
+
+.nodalas ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.nodalas li a {
+  display: block;
+  padding: 4px 5px;
+  text-decoration: none;
+  color:var(--textcolor);
+  font-weight:bold;
+}
+
+.nodalas li a:hover {
+  background-color: var(--accent2);
+}
+
+.aboutme {
+  box-sizing: border-box;
+  flex-basis: 75%;
+  padding: 20px;
+}
+
+.profils{
+  box-sizing: border-box;
+  flex-basis: 20%;
+}
