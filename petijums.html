@@ -25,32 +25,40 @@
 </div>
 
 <div class="content">
-  <div class="teorija">
-    <h1>Kā veikt pētījumu?</h1>
-    <p>
-      Pētījuma veikšanai ir trīs fāzes - plānošana, aprēķinu veikšana un diagrammu veidošana Microsoft Excel un paša pētījuma rakstīšana.
-    </p>
-  </div>
+  <div class="two_columns">
+    <div class="teorija">
+      <h1>Kā veikt pētījumu?</h1>
+      <p>
+        Pētījuma veikšanai ir trīs fāzes - plānošana, aprēķinu veikšana un diagrammu veidošana Microsoft Excel un paša pētījuma rakstīšana.
+      </p>
+    </div>
 
-  <div class="nodalas">
-  <ul>
-    <li>
-      <a href="planning.html">
-        1. Pētījuma plānošana
-      </a>
-    </li>
-    <li>
-      <a href="data.html">
-        2. Darbs ar datiem
-      </a>
-    </li>
-    <li>
-      <a href="writing.html">
-        3. Pētījuma teksts
-      </a>
-    </li>
-  </ul>
+    <div class="nodalas">
+    <ul>
+      <li>
+        <button onclick="planning_menu()" class="drop_button">1. Pētījuma plānošana</button>
+        <div id = "planning_dropdown" class="dropdown_content">
+          <a href="planning.html">1.1. Teorija</a>
+          <a href="#">1.2. Uzdevumi </a>
+        </div>
+      </li>
+      <li>
+        <button onclick="planning_menu()" class="drop_button">2. Darbs ar datiem</button>
+        <div id = "planning_dropdown" class="dropdown_content">
+          <a href="#">2.1</a>
+          <a href="#">2.2. Uzdevumi </a>
+        </div>
+      </li>
+      <li>
+        <button onclick="planning_menu()" class="drop_button">3. Pētījuma teksts</button>
+        <div id = "planning_dropdown" class="dropdown_content">
+          <a href="#">3.1. Teorija</a>
+          <a href="#">3.2. Uzdevumi </a>
+        </div>
+      </li>
+    </ul>
   </div>
+</div>
 
 </div>
 <div class="footer">

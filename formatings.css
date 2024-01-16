@@ -7,7 +7,7 @@
 
 :root{
   --textcolor: #151519;
-  --accent: #8ac141;
+  --accent: #9dc607;
   --bckgr: #d8d8d8;
   --accent2: #ed65cb;
   --link: #3099f4;
@@ -81,15 +81,14 @@ body {
   height: 51px;
 }
 
-.content, 
-.content1 {
+.content {
   box-sizing: border-box;
   padding: 30px;
   width: 100%;
   min-height: calc(100vh - 48px - 51px);
 }
 
-.content {
+.two_columns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -139,4 +138,34 @@ body {
 .profils{
   box-sizing: border-box;
   flex-basis: 20%;
+}
+
+.drop_button {
+  background-color: var(--accent);
+  color: var(--textcolor);
+  padding: 4px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.drop_button:hover, .dropbtn:focus {
+  background-color: var(--accent2);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--accent2);
+}
+
+.show {
+  display:block;
 }
