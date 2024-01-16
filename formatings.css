@@ -13,6 +13,16 @@
   --link: #3099f4;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: var(--link);
 }
@@ -68,23 +78,21 @@ body {
   padding: 4px;
   box-sizing: border-box;
   font-size: small;
+  height: 51px;
 }
 
-.content {
-  box-sizing: border-box;
-  padding: 30px;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: calc(100% - 12px);
-}
-
+.content, 
 .content1 {
   box-sizing: border-box;
   padding: 30px;
   width: 100%;
-  min-height: calc(100% - 12px);
+  min-height: calc(100vh - 48px - 51px);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .content:after {
